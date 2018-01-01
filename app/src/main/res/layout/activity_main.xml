@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FC5B85">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Enter the following details"
+
+       android:textColor="#ffff"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+android:background="#ffff"
+        android:ems="10"
+        android:hint="Total subject For 4 Credits"
+        android:inputType="number"
+        android:paddingBottom="10dp"
+        android:paddingLeft="3dp"
+        android:paddingTop="10dp"
+        android:selectAllOnFocus="false"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="26dp"
+        android:background="#ffff"
+        android:ems="10"
+        android:hint="Total Subject For 3 Credits"
+        android:inputType="number"
+        android:paddingBottom="10dp"
+        android:paddingLeft="3dp"
+        android:paddingTop="10dp"
+
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:textColor="#000"
+        android:textColorHint="#000"/>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="#ffff"
+        android:ems="10"
+        android:hint="Total number of practical"
+        android:inputType="number"
+        android:paddingBottom="10dp"
+        android:paddingLeft="3dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/editText2"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:textColor="#000"
+        android:textColorHint="#000"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:background="#ffff"
+        android:onClick="send"
+        android:text="Start"
+        android:textColor="#000"
+        tools:ignore="OnClick" />
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:columnCount="2"
+        android:id="@+id/HolderLayout"
+        android:background="@color/colorAccent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CreateTextView"
+            android:text="Create TextView"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorPrimary"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CreateEdittext"
+            android:text="Create Edittext"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorPrimary"/>
+
+
+    </LinearLayout>
+
+</ScrollView>
