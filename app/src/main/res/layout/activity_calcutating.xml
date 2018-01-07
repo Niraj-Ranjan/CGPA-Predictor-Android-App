@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nirajranjan.cgpa.Calcutating"
+    android:background="#fff">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:background="#0263E6"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Calculating CGPA"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1"
+        android:id="@+id/linearLayout1">
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Last Sem CGPA"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_weight="0.01"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="Calculate CGPA"
+            android:onClick="cgpacal"
+            android:id="@+id/button"
+            android:background="@color/colorAccent"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="RESULT"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            android:textColor="@color/green"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/linearLayout2"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout1"
+        android:background="#ff0000"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:text="CGPA = "
+            android:textSize="30dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+
+            android:text=""
+            android:textSize="30dp"
+            android:gravity="center"
+            android:id="@+id/textView1" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/linearLayout3"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout2"
+        android:background="#ff0000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:text="SGPA = "
+            android:textSize="30dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="30dp"
+            android:gravity="center"
+            android:id="@+id/textView2"/>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

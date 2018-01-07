@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.nirajranjan.cgpa">
+    package="com.example.nirajranjan.cgpa"
+    >
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/applogo"
+        android:icon="@drawable/main"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -16,14 +17,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity
-            android:name=".FourthActivity"
-            android:label="@string/title_activity_fourth"></activity>
-        <activity android:name=".NewActivity"></activity>
-
+        <activity android:name=".MainActivity" />
+        <activity android:name=".NewActivity" />
+        <activity android:name=".Calcutating"></activity>
     </application>
-
-
 
 </manifest>

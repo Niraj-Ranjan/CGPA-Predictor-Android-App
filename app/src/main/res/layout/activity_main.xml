@@ -3,31 +3,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FC5B85">
+    android:background="@drawable/h">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
-        android:text="Enter the following details"
-
+        android:layout_marginTop="40dp"
+        android:text="Enter Following Details"
        android:textColor="#ffff"
         android:textSize="20dp"
-        android:textAlignment="center"/>
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
 
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="52dp"
-android:background="#ffff"
-        android:ems="10"
+        android:layout_marginTop="83dp"
+        android:ems="1"
         android:hint="Total subject For 4 Credits"
         android:inputType="number"
         android:paddingBottom="10dp"
@@ -35,15 +32,21 @@ android:background="#ffff"
         android:paddingTop="10dp"
         android:selectAllOnFocus="false"
         android:textColor="#000"
-        android:textColorHint="#000"
-        />
+        android:gravity="center"
 
-    <EditText
-        android:id="@+id/editText2"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+
+   <EditText
+        android:id="@+id/edittext2"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_marginTop="26dp"
-        android:background="#ffff"
+        android:layout_marginTop="31dp"
+
         android:ems="10"
         android:hint="Total Subject For 3 Credits"
         android:inputType="number"
@@ -51,42 +54,66 @@ android:background="#ffff"
         android:paddingLeft="3dp"
         android:paddingTop="10dp"
 
+        android:textColor="#000"
+        android:gravity="center"
         android:layout_below="@+id/editText"
         android:layout_alignLeft="@+id/editText"
         android:layout_alignStart="@+id/editText"
         android:layout_alignRight="@+id/editText"
-        android:layout_alignEnd="@+id/editText"
+        android:layout_alignEnd="@+id/editText" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="37dp"
+
+        android:ems="10"
+        android:hint="Total Subject For 2 Credit"
+        android:inputType="number"
+        android:paddingBottom="10dp"
+        android:paddingLeft="3dp"
+        android:paddingTop="10dp"
         android:textColor="#000"
-        android:textColorHint="#000"/>
+        android:gravity="center"
+        android:layout_below="@+id/edittext2"
+        android:layout_alignLeft="@+id/edittext2"
+        android:layout_alignStart="@+id/edittext2" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/go"
+        android:onClick="send1"
+        android:background="#fff"
+        android:layout_below="@+id/editText3"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
 
     <EditText
         android:id="@+id/editText3"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="32dp"
-        android:background="#ffff"
-        android:ems="10"
-        android:hint="Total number of practical"
-        android:inputType="number"
-        android:paddingBottom="10dp"
-        android:paddingLeft="3dp"
-        android:paddingTop="10dp"
-        android:layout_below="@+id/editText2"
-        android:layout_alignRight="@+id/editText"
-        android:layout_alignEnd="@+id/editText"
-        android:textColor="#000"
-        android:textColorHint="#000"/>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:layout_below="@+id/editText3"
-        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4"
+        android:layout_below="@+id/editText4"
         android:layout_marginTop="46dp"
-        android:background="#ffff"
-        android:onClick="send"
-        android:text="Start"
-        android:textColor="#000"
-        tools:ignore="OnClick" />
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Total Subject For 1 Credit"
+        android:inputType="number" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:background="#fff"
+        android:src="@drawable/ic_launcher"
+        android:layout_below="@+id/editText3"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:onClick="clear"/>
+
 </RelativeLayout>

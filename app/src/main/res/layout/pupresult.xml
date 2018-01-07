@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="350dp"
     android:layout_height="300dp"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/bluelight"
     android:padding="5dp"
     android:layout_gravity="center">
     <TextView
@@ -68,10 +68,11 @@
         android:id="@+id/btnfollow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="For CGPA"
+        android:text="CGPA"
         android:layout_marginTop="25dp"
         android:layout_gravity="center_horizontal"
         android:textColor="@color/white"
-        android:onClick="cgparesultformat"/>
+
+        />
 
 </LinearLayout>

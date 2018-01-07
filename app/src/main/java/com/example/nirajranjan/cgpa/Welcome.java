@@ -38,7 +38,7 @@ public class Welcome extends Activity {
            public void run()
            {
                try {
-                   sleep(5000);
+                   sleep(1000);
                } catch (InterruptedException e) {
                    e.printStackTrace();
                }
